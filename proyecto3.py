@@ -48,9 +48,9 @@ def secuencia(secuencia_nueva):
     return (codones)
 
 
-diccionario = {"GCU":"A","GCC":"A", "GCA":"A","GCC":"A", "CGU":"R", "GCG":"R", "CGA":"R", "CGG":"R", "AGA":"R", "AGG":"R", "AAU":"N", "AAC":"N", "GAU":"D", "GAC":"D", "UGU":"C", "UGC":"C", "CAA":"Q","CAG":"Q", "GAA":"E", "GAC":"E", "GGU":"G","GGC":"G","GGA":"G","GGG":"G", "GAU":"H", "CAC":"H",  "AUU":"I", "AUG":"I", "AUA":"I", "UUA":"L","UUG":"L","CUU":"L","CUC":"L","CUA":"L","CUG":"L", "AAA":"K","AAG":"K", "AUG":"M", "UUU":"F","UUC":"F", "CCU":"P","CCC":"P","CCA":"P","CCG":"P", "UCU":"S","UCC":"S","UCA":"S","UCG":"S","AGU":"S","AGC":"S", "ACU":"T","ACC":"T","ACA":"T","ACG":"T", "UGG":"W", "UAU":"Y","UAC":"Y"  ,"GUU":"V","GUC":"V","GUA":"V","GUG":"V"}
+diccionario = {"CAU":"H","CGC":"R","GCU":"A","GCC":"A", "GCA":"A","GCC":"A", "CGU":"R", "GCG":"R", "CGA":"R", "CGG":"R", "AGA":"R", "AGG":"R", "AAU":"N", "AAC":"N", "GAU":"D", "GAC":"D", "UGU":"C", "UGC":"C", "CAA":"Q","CAG":"Q", "GAA":"E", "GAC":"E", "GGU":"G","GGC":"G","GGA":"G","GGG":"G", "GAU":"H", "CAC":"H",  "AUU":"I", "AUG":"I", "AUA":"I", "UUA":"L","UUG":"L","CUU":"L","CUC":"L","CUA":"L","CUG":"L", "AAA":"K","AAG":"K", "AUG":"M", "UUU":"F","UUC":"F", "CCU":"P","CCC":"P","CCA":"P","CCG":"P", "UCU":"S","UCC":"S","UCA":"S","UCG":"S","AGU":"S","AGC":"S", "ACU":"T","ACC":"T","ACA":"T","ACG":"T", "UGG":"W", "UAU":"Y","UAC":"Y"  ,"GUU":"V","GUC":"V","GUA":"V","GUG":"V"}
 
-diccionario2 = {"GCU":"Ala","GCC":"Ala", "GCA":"Ala","GCC":"Ala", "CGU":"Arg", "GCG":"Arg", "CGA":"Arg", "CGG":"Arg", "AGA":"Arg", "AGG":"Arg", "AAU":"Asn", "AAC":"Asn", "GAU":"Asp", "GAC":"Asp", "UGU":"Cys", "UGC":"Cys", "CAA":"Gln","CAG":"Gln", "GAA":"Glu", "GAC":"Glu", "GGU":"Gly","GGC":"Gly","GGA":"Gly","GGG":"Gly", "GAU":"Hys", "CAC":"Hys",  "AUU":"He", "AUG":"He", "AUA":"He", "UUA":"Leu","UUG":"Leu","CUU":"Leu","CUC":"Leu","CUA":"Leu","CUG":"Leu", "AAA":"Lys","AAG":"Lys", "AUG":"Met", "UUU":"Phe","UUC":"Phe", "CCU":"Pro","CCC":"Pro","CCA":"Pro","CCG":"Pro", "UCU":"Ser","UCC":"Ser","UCA":"Ser","UCG":"Ser","AGU":"Ser","AGC":"Ser", "ACU":"Thr","ACC":"Thr","ACA":"Thr","ACG":"Thr", "UGG":"Trp", "UAU":"Tyr","UAC":"Tyr","GUU":"Val","GUC":"Val","GUA":"Val","GUG":"Val", "UAG":"STOP", "UGA":"STOP", "UAA":"STOP"}
+diccionario2 = {"CAU":"His","CGC":"Arg","GCU":"Ala","GCC":"Ala", "GCA":"Ala","GCC":"Ala", "CGU":"Arg", "GCG":"Arg", "CGA":"Arg", "CGG":"Arg", "AGA":"Arg", "AGG":"Arg", "AAU":"Asn", "AAC":"Asn", "GAU":"Asp", "GAC":"Asp", "UGU":"Cys", "UGC":"Cys", "CAA":"Gln","CAG":"Gln", "GAA":"Glu", "GAC":"Glu", "GGU":"Gly","GGC":"Gly","GGA":"Gly","GGG":"Gly", "GAU":"His", "CAC":"His",  "AUU":"He", "AUG":"He", "AUA":"He", "UUA":"Leu","UUG":"Leu","CUU":"Leu","CUC":"Leu","CUA":"Leu","CUG":"Leu", "AAA":"Lys","AAG":"Lys", "AUG":"Met", "UUU":"Phe","UUC":"Phe", "CCU":"Pro","CCC":"Pro","CCA":"Pro","CCG":"Pro", "UCU":"Ser","UCC":"Ser","UCA":"Ser","UCG":"Ser","AGU":"Ser","AGC":"Ser", "ACU":"Thr","ACC":"Thr","ACA":"Thr","ACG":"Thr", "UGG":"Trp", "UAU":"Tyr","UAC":"Tyr","GUU":"Val","GUC":"Val","GUA":"Val","GUG":"Val", "UAG":"STOP", "UGA":"STOP", "UAA":"STOP"}
 codones=[]
 final = []
 
@@ -136,10 +136,10 @@ while menu != 4:
         print("el numero de nucleotidos U es de", G, "y el porcentaje es", G*100/len(porcentaje))
 
 #-------------------------------------------------------------------
-        print("la cantidad de polares sin carga es", polares_sin_carga,"y su porcentaje es de",polares_sin_carga*len(final)/100)
+        print("la cantidad de polares sin carga es", polares_sin_carga,"y su porcentaje es de",polares_sin_carga*100/len(final))
         print("la cantidad de polares con carga positiva es", polares_con_carga_positiva,"y su porcentaje es de",polares_con_carga_positiva*100/len(final))
         print("la cantidad de polares con carga negativa es", polares_con_carga_negativa,"y su porcentaje es de",polares_con_carga_negativa*100/len(final))
-        print("la cantidad de apolares es", apolares,"y su porcentaje es de",apolares*len(final)/100)
+        print("la cantidad de apolares es", apolares,"y su porcentaje es de",apolares*100/len(final))
         
 #-------------------------------------------------------------------
 
@@ -147,21 +147,21 @@ while menu != 4:
         menu = int(input("ingrese 1 para obtener la proteina \ningrese 2 para obtener las estadisticas de la secuencia \ningrese 3 para generar un diagrama de relacion aa \ningrese 4 para terminar el programa \nseleccione una opcion: "))
     
     if menu == 3:
-
-        x = ",".join(codones2)
+        print(codones2)
         g = Digraph('G', filename='grafico.gv',format='png')
-
+        g.attr('node', shape='circle')
+        g.edge("AUG", codones2[0])
         for i in range (len(codones2)-1):
             g.attr('node', shape='circle')
             g.edge(codones2[i], codones2[i+1])
-            i += 1
 
-        for i in range (len(codones2)-1):
-            g.attr('node', shape='rectangle')
-            g.edge(codones2[i], str(diccionario2.get(codones2[i])))
+        for i in range (len(codones2)):
+            g.attr('node', shape=('rectangle'))
+            g.edge(codones2[i], str(diccionario2.get(codones2[i])), color='red')
 
-        g.edge(codones2[len(codones2)-2], codones2[len(codones2)-1])
-        
+
+        g.attr('node', shape='circle')
+        g.edge(codones2[len(codones2)-1], "STOP")
         g.view()
 
         print("-------------------Menu-------------------")
